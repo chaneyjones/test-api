@@ -35,4 +35,9 @@ app.get('/tft-rank', async (req, res) => {
   }
 });
 
+app.get('/riot.txt', (req, res) => {
+  res.type('text/plain');
+  res.send('ecb8824f-fc4b-4da3-8a11-99d7cd5e4247');
+});
+
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
